@@ -55,6 +55,14 @@
       height: 200px;
       background: linear-gradient(transparent, var(--ivory));
     }
+
+    /* ------- */
+    #about .container{
+      max-width: 90% !important;
+      min-width: 90% !important;
+      margin: 0 auto;
+    }
+
     .scroll-cue {
       animation: float 2s ease-in-out infinite;
       color: rgba(45,42,38,0.5);
@@ -149,6 +157,10 @@
       font-weight: 500;
     }
 
+    #founder{
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
     #founder span{
       font-size: 30px;
     }
