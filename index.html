@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ember2Essence | Crafted for Tranquil Moments</title>
+  <title>Ember2Essence - Home | Crafted for Tranquil Moments</title>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,166 +18,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
-    :root {
-      --ivory: #F5F1ED;
-      --charcoal: #2D2A26;
-      --gold: #BFAF8E;
-      --linen: #E8E1D9;
-    }
-    body {
-      background: var(--ivory);
-      color: var(--charcoal);
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
-    h1, h2, h3, h4, .display-1, .display-2, .display-3, .display-4 {
-      font-family: 'Playfair Display', serif;
-    }
-    .navbar {
-      background: rgba(245, 241, 237, 0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(232, 225, 217, 0.3);
-    }
-    .navbar-brand {
-      font-size: 1.6rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-    }
-    .nav-link {
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      letter-spacing: 0.15em;
-      color: var(--charcoal) !important;
-      transition: color 0.3s ease;
-    }
-    .nav-link:hover {
-      color: var(--gold) !important;
-    }
-    .hero {
-      height: 100vh;
-      /* background: linear-gradient(to bottom, rgba(245,241,237,0.2), rgba(245,241,237,0.8)), url('https://images.pexels.com/photos/6621158/pexels-photo-6621158.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat; */
-      /* background: linear-gradient(to bottom, rgba(245,241,237,0.2), rgba(245,241,237,0.8)), url('./bg.png') center/cover no-repeat; */
-      background: linear-gradient(to bottom, rgba(245,241,237,0.2), rgba(245,241,237,0.8)), url('./product_placement.png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 200px;
-      background: linear-gradient(transparent, var(--ivory));
-    }
-    .scroll-cue {
-      animation: float 2s ease-in-out infinite;
-      color: rgba(45,42,38,0.5);
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-    .section-title {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-    }
-    .faq-item {
-      border-bottom: 1px solid var(--linen);
-      padding: 1.5rem 0;
-      cursor: pointer;
-    }
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 500;
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.4s ease;
-      color: #555;
-    }
-    .faq-item.active .faq-answer {
-      max-height: 200px;
-      padding-top: 1rem;
-    }
-    .cta-section {
-      background: var(--linen);
-    }
-    .form-control {
-      background: transparent;
-      border: 1px solid var(--charcoal);
-      border-radius: 0;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-    }
-    .form-control:focus {
-      box-shadow: none;
-      border-color: var(--gold);
-    }
-    .btn-submit {
-      background: var(--charcoal);
-      color: white;
-      border-radius: 0;
-      padding: 0.75rem 2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.85rem;
-      transition: all 0.3s ease;
-    }
-    .btn-submit:hover {
-      background: var(--gold);
-      color: var(--charcoal);
-    }
-    footer {
-      border-top: 1px solid var(--linen);
-      font-size: 0.85rem;
-    }
-    .social-icon {
-      color: var(--charcoal);
-      transition: color 0.3s;
-    }
-    .social-icon:hover {
-      color: var(--gold);
-    }
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    #subhead{
-      /* font-family: Arial, Helvetica, sans-serif; */
-      font-family: Oswald, sans-serif;
-  /* font-weight: 400; */
-  font-style: normal;
-      font-size: 1.8rem;
-      font-weight: 100 !important;
-    }
-
-    #navlogo img{
-      max-width: 80px;
-    }
-
-    .lead{
-      text-align: justify;
-    }
-  </style>
 </head>
-<body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+<body> 
+    
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid px-4 px-md-5">
       <!-- <a class="navbar-brand" href="#">Ember2Essence</a> -->
-      <a class="navbar-brand" id="navlogo" href="#"><img src="./logo.png"></a>
+      <a class="navbar-brand" id="navlogo" href="#"><img src="../assets/images/logo.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav mx-auto gap-5">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="./index.html#about">About</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li> -->
+           <li class="nav-item"><a href="#" class="text-decoration-none nav-link" data-bs-toggle="modal" data-bs-target="#candleGuideModal">
+            Candle Guide
+          </a></li>
         </ul>
         <a href="https://www.facebook.com/profile.php?id=100063567231497" target="_blank" class="social-icon">
           <i class="fab fa-facebook fa-lg"></i>
@@ -188,331 +51,224 @@
       </div>
     </div>
   </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="text-center text-charcoal" data-gsap="fade-up">
-      <h1 class="display-1 fw-bold mb-3">Light Your Spark, Live Your Essence</h1>
-      <p class="display-6 fw-light my-3 pb-5" id="subhead">Handmade candles crafted to bring warmth, mindfulness, and serenity to your home.</p>
-      <!-- <p class="text-uppercase tracking-widest opacity-75" style="font-size: 0.8rem; letter-spacing: 0.2em;">
-        Hand-poured · Natural · Artisanal
-      </p> -->
-    </div>
-    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 scroll-cue">
-      <i class="fas fa-chevron-down fa-2x"></i>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-5">
-    <div class="container py-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-gsap="fade-right">
-          <img src="./product2.png" 
-               alt="Ember2Essence candle" class="img-fluid rounded shadow-lg">
-        </div>
-        <div class="col-lg-6" data-gsap="fade-left">
-          <!-- <h3 class="section-title">A Ritual of Calm</h3> -->
-          <h3 class="section-title">Our Story</h3>
-          <!-- <p class="lead mb-4">
-            Each Ember2Essence candle is hand-poured using natural wax and native botanicals, designed to transform your space into a sanctuary of serenity.
-          </p> -->
-          
-
-
-          <p class="lead mb-4">
-            At Ember2Essence, we create handmade candles that are more than light—they are symbols of healing, resilience, and ritual. We aim to enhance your space and uplift your spirit. Each candle is handmade with care, using premium wax and carefully curated fragrances that transform everyday moments into calming rituals. <br><br>
-More than just candles, Ember2Essence is a space created to remind you to pause, reflect, and reconnect with your own spark.
-          </p>
-
-         
-          <p class="lead mb-4">
-            Watch this space as we continue crafting experiences, products, and services designed to inspire, delight, and help you fall in love with your everyday rituals.
-          </p>
-          
-          <!-- <div class="mb-4">
-            <h5 class="fw-semibold text-gold">Signature – Coastal Dusk</h5>
-            <p class="small text-muted mb-2">Australian Sandalwood · Salted Fig · Native Lemon Myrtle</p>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="text-center text-charcoal" data-gsap="fade-up">
+        <h1 class="display-1 fw-bold mb-3">Light Your Spark, Live Your Essence</h1>
+        <p class="display-6 fw-light my-3 pb-5" id="subhead">Handmade candles crafted to bring warmth, mindfulness, and serenity to your home.</p>
+        <!-- <p class="text-uppercase tracking-widest opacity-75" style="font-size: 0.8rem; letter-spacing: 0.2em;">
+          Hand-poured · Natural · Artisanal
+        </p> -->
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 scroll-cue">
+        <i class="fas fa-chevron-down fa-2x"></i>
+      </div>
+    </section>
+  
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-gsap="fade-right">
+            <img src="../assets/images/product2.png" 
+                 alt="Ember2Essence candle" class="img-fluid rounded shadow-lg">
           </div>
-          <div>
-            <h5 class="fw-semibold text-gold">Ultra – Midnight Oud <em class="text-muted small">(Limited)</em></h5>
-            <p class="small text-muted">Agarwood · Black Amber · Vanilla Bean</p>
-          </div> -->
+          <div class="col-lg-6" data-gsap="fade-left">
+            <!-- <h3 class="section-title">A Ritual of Calm</h3> -->
+            <h3 class="section-title">Our Story</h3>
+            <!-- <p class="lead mb-4">
+              Each Ember2Essence candle is hand-poured using natural wax and native botanicals, designed to transform your space into a sanctuary of serenity.
+            </p> -->
+            
+  
+  
+            <p class="lead mb-4">
+              At Ember2Essence, we create handmade candles that are more than light, they are symbols of healing, resilience, and ritual.  <br><br>
+              
+              Ember2Essence is a <strong class="verystrong">purpose-driven candle brand</strong> centered on intentional living, nervous system awareness, and meaningful rituals. It creates <strong class="verystrong">handmade candles</strong> designed to support moments of pause, grounding, and emotional regulation.
+            </p>
+  
+           
+            <p class="lead mb-4">
+              Each candle is handmade with care, using premium wax, wooden wick and reusable handmade clay jar.
+            </p>
+  
+            <p class="lead mb-4">
+              Beyond the product itself, Ember2Essence seeks to nurture <strong class="verystrong">emotional connection</strong> with customers through small rituals that encourage wellbeing, self-reflection, and restoration. The brand also partners with <strong class="verystrong">social enterprises</strong> that provide employment and mentoring opportunities for artists with intellectual and physical disabilities, reinforcing its dedication to inclusivity and community impact.
+            </p>
+  
+            <p class="lead mb-4" id="founder">
+              <span>Founder</span> <br><br>
+              Ember2Essence was born from the founder’s <strong class="verystrong">personal experiences with sensory overwhelm, emotional fatigue, and the need for grounding rituals</strong> in daily life. Lighting a candle began as a <strong class="verystrong">small but powerful ritual of pause</strong>, a way to slow down, reconnect, and restore balance. This personal practice evolved into a brand built around <strong class="verystrong">healing, restoration, and intentional moments of calm</strong>.
+            </p>
+            
+              
+            </p>
+            <!-- <p class="lead mb-4"></p> -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="values-section">
-    <div class="container">
-      <h2 class="section-title">Crafted with Purpose</h2>
-      <p class="section-subtitle">Beyond the glow, we believe in creating a lasting impact on your home and our community.</p>
+    </section>
   
-      <div class="values-grid">
-        <!-- Unique Value -->
-        <div class="value-card">
-          <div class="icon">✨</div>
-          <h3>Unique Value</h3>
-          <p>Unlike mass-produced candles, each piece is handcrafted, eco-friendly, and infused with intention—designed to soothe the senses and create a mindful experience.</p>
-        </div>
+    <section class="product-section text-center">
+      <div class="container">
+        <h2 class="section-title">Products</h2>
+        <p class="section-subtitle">Range of products we are offering</p>
   
-        <!-- Sustainability -->
-        <div class="value-card">
-          <div class="icon">🌿</div>
-          <h3>Sustainability</h3>
-          <p>Our commitment to the planet is reflected in our locally made reusable jars and natural materials, supporting environmental responsibility at every step.</p>
-        </div>
+        <div class="row">
+          <div class="col-6">
+            <h4>SOMA - White Lotus Jar</h4>
+            <img src="../assets/images/Soma White.png" alt="">
+            <p>Light Soma at dusk, when the day softens and your spirit asks to be still. Breathe in the lavender. Let your shoulders drop, your thoughts settle, and your crown open to whatever wisdom is waiting for you tonight.</p>
+            <a href="https://square.link/u/nMs7QadB" target="_blank"><button class="btn btn-outline-dark">Buy SOMA - White Lotus Jar</button></a>
+          </div>
   
-        <!-- Inclusivity -->
-        <div class="value-card">
-          <div class="icon">🤝</div>
-          <h3>Inclusivity</h3>
-          <p>We proudly collaborate with <strong>QStudio</strong> and <strong>Endeavour Foundation</strong> to support, mentor, and train people with intellectual and physical disabilities.</p>
+          <div class="col-6">
+            <h4>SATYA - Blue Lotus Jar</h4>
+            <img src="../assets/images/satya blue.png" alt="">
+  
+            <p>Light Satya before a difficult conversation, a creative session, or any moment that asks you to show up as your most authentic self. <br><br><br></p>
+            <a href="https://square.link/u/dmEp4lE7" target="_blank"><button class="btn btn-outline-dark">Buy SATYA - Blue Lotus Jar</button></a>
+          </div>
+  
+          
         </div>
       </div>
-    </div>
-  </section>
   
-  <style>
-    .values-section {
-      padding: 60px 20px;
-      background-color: #f9f7f2; /* Soft, organic background */
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      color: #333;
-      text-align: center;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-    .section-subtitle {
-      font-size: 1.1rem;
-      color: #7f8c8d;
-      margin-bottom: 40px;
-    }
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    .value-card {
-      background: #fff;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .value-card:hover {
-      transform: translateY(-5px);
-    }
-    .icon {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .value-card h3 {
-      margin-bottom: 15px;
-      font-size: 1.5rem;
-      color: #4a5a4a; /* Earthy green tone */
-    }
-    .value-card p {
-      line-height: 1.6;
-      color: #555;
-    }
-  </style>
-
-  <section class="alignment-statement">
-    <div class="inner-wrap">
-      <p class="manifesto-top">Our products are not about productivity or perfection.</p>
-      
-      <div class="manifesto-core">
-        <p>They’re about <strong>pause.</strong></p>
-        <p>A <strong>reset.</strong></p>
-        <p>A <strong>return to centre.</strong></p>
+      <div class="row" id="combo">
+        <div class="col-12">
+          <h2>
+            Buy Combo to get discount
+          </h2> 
+          <a href="https://square.link/u/O1FI5QE3" target="_blank"><button class="btn btn-outline-success">Buy Combo offer</button></a>
+  
+        </div>
       </div>
+    </section>
   
-      <p class="manifesto-belief">
-        A reminder that calm isn’t something you earn—<br>
-        <span>it’s something you allow.</span>
-      </p>
-  
-      
-    </div>
-  </section>
-  
-  <style>
-    .alignment-statement {
-      padding: 12px 24px;
-      background-color: #faf9f6; /* Warm parchment white */
-      color: #3a3a3a;
-      text-align: center;
-      line-height: 1.8;
-    }
-    .inner-wrap {
-      max-width: 750px;
-      margin: 0 auto;
-    }
-    .manifesto-top {
-      font-size: 1.1rem;
-      letter-spacing: 0.05em;
-      color: #8c8c8c;
-      margin-bottom: 40px;
-    }
-    .manifesto-core {
-      font-family: 'Playfair Display', serif; /* Use a premium serif if available */
-      font-size: 2.2rem;
-      margin-bottom: 50px;
-      font-weight: 300;
-    }
-    .manifesto-core p { margin: 10px 0; }
-    .manifesto-core strong {
-      font-weight: 500;
-      color: #556b2f; /* Dark Olive for a grounded feel */
-    }
-    .manifesto-belief {
-      font-size: 1.4rem;
-      margin-bottom: 60px;
-      font-style: italic;
-    }
-    .manifesto-belief span {
-      display: block;
-      margin-top: 10px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.9rem;
-      font-style: normal;
-    }
-    .manifesto-conclusion {
-      border-top: 1px solid #e0ddd5;
-      padding-top: 40px;
-    }
-    .alignment-call {
-      font-size: 2.5rem;
-      margin-top: 15px;
-      font-weight: 300;
-      color: #2c2c2c;
-    }
-    .alignment-call em {
-      text-decoration: underline;
-      text-underline-offset: 8px;
-      text-decoration-color: #d4cfc3;
-    }
-  </style>
-
-<section class="alignment-breakout">
-  <div class="alignment-container">
+    <section class="values-section">
+      <div class="container">
+        <h2 class="section-title">Crafted with Purpose</h2>
+        <p class="section-subtitle">Beyond the glow, we believe in creating a lasting impact on your home and our community.</p>
     
-    <!-- The "Normal" Block (Subtle, Muted) -->
-    <div class="statement-block normal-block">
-      <p>This is not about becoming more</p>
-      <h3 class="quote-text strike-through">“normal.”</h3>
-    </div>
-
-    <!-- The Divider (Visual Pause) -->
-    <div class="alignment-divider">
-      <span class="line"></span>
-      <span class="dot"></span>
-      <span class="line"></span>
-    </div>
-
-    <!-- The "Aligned" Block (Bold, Grounded) -->
-    <div class="statement-block aligned-block">
-      <p>It’s about becoming more</p>
-      <h2 class="quote-text emphasize">aligned.</h2>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  .alignment-breakout {
-    padding: 100px 20px;
-    background-color: #fcfbf9; /* Off-white for a natural feel */
-    text-align: center;
-    font-family: 'Playfair Display', serif; /* Elegant brand font */
-    color: #444;
-  }
-
-  .alignment-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .statement-block p {
-    font-family: 'Montserrat', sans-serif; /* Modern sans-serif for secondary text */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
-    color: #a0a0a0;
-    margin-bottom: 8px;
-  }
-
-  .quote-text {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 0;
-  }
-
-  /* Styling for 'Normal' */
-  .strike-through {
-    color: #d1d1d1;
-    position: relative;
-    display: inline-block;
-  }
-  .strike-through::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 55%;
-    width: 100%;
-    height: 1px;
-    background-color: #e0ddd5;
-  }
-
-  /* Styling for 'Aligned' */
-  .emphasize {
-    color: #2c3e50;
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  /* Divider Styles */
-  .alignment-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 40px 0;
-  }
-  .alignment-divider .line {
-    width: 40px;
-    height: 1px;
-    background-color: #e0ddd5;
-  }
-  .alignment-divider .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #6b8e23; /* Olive green accent */
-    border-radius: 50%;
-  }
-
-  @media (max-width: 600px) {
-    .quote-text { font-size: 2.2rem; }
-  }
-</style>
-
+        <div class="values-grid">
+          <!-- Unique Value -->
+          <div class="value-card">
+            <div class="icon">✨</div>
+            <h3>Unique Value</h3>
+            <p>Unlike mass-produced candles, each piece is handcrafted, eco-friendly, and infused with intention—designed to soothe the senses and create a mindful experience.</p>
+          </div>
+    
+          <!-- Sustainability -->
+          <div class="value-card">
+            <div class="icon">🌿</div>
+            <h3>Sustainability</h3>
+            <p>Our commitment to the planet is reflected in our locally made reusable jars and natural materials, supporting environmental responsibility at every step.</p>
+          </div>
+    
+          <!-- Inclusivity -->
+          <div class="value-card">
+            <div class="icon">🤝</div>
+            <h3>Inclusivity</h3>
+            <p>We proudly collaborate with <strong>QStudio</strong> and <strong>Endeavour Foundation</strong> to support, mentor, and train people with intellectual and physical disabilities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
   
-
-
+    <section class="alignment-statement">
+      <div class="inner-wrap">
+        <p class="manifesto-top">Our products are not about productivity or perfection.</p>
+        
+        <div class="manifesto-core">
+          <p>They’re about <strong>pause.</strong></p>
+          <p>A <strong>reset.</strong></p>
+          <p>A <strong>return to centre.</strong></p>
+        </div>
+    
+        <p class="manifesto-belief">
+          A reminder that calm isn’t something you earn—<br>
+          <span>it’s something you allow.</span>
+        </p>
+    
+        
+      </div>
+    </section>
   
+  <section class="alignment-breakout">
+    <div class="alignment-container">
+      
+      <!-- The "Normal" Block (Subtle, Muted) -->
+      <div class="statement-block normal-block">
+        <p>This is not about becoming more</p>
+        <h3 class="quote-text strike-through">“normal.”</h3>
+      </div>
+  
+      <!-- The Divider (Visual Pause) -->
+      <div class="alignment-divider">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+  
+      <!-- The "Aligned" Block (Bold, Grounded) -->
+      <div class="statement-block aligned-block">
+        <p>It’s about becoming more</p>
+        <h2 class="quote-text emphasize">aligned.</h2>
+      </div>
+  
+    </div>
+  </section>
+  
+    <!-- FAQ -->
+    <!-- <section id="faq" class="py-5 bg-white">
+      <div class="container py-5">
+        <h3 class="section-title text-center mb-5">Frequently Asked</h3>
+        <div class="mx-auto" style="max-width: 700px;">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are Ember2Essence candles natural?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              Yes. We use 100% natural soy-coconut wax blends, pure essential oils, and lead-free cotton wicks.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long do they burn?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              Signature (380g) burns for ~70 hours. Ultra (420g) burns for ~80 hours under optimal conditions.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Where are they hand-poured?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              Every candle is hand-poured in small batches in Australia, with care and intention.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you ship Australia-wide?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              Yes. Express shipping to all metro areas. Regional delivery available.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-  <!-- CTA / NEWSLETTER -->
-  <section class="cta-section py-5">
+    <!-- CTA / NEWSLETTER -->
+<section class="cta-section py-5">
     <div class="container text-center py-5">
       <h3 class="section-title mb-3">Stay Connected
       </h3>
@@ -543,54 +299,8 @@ More than just candles, Ember2Essence is a space created to remind you to pause,
       </p>
     </div>
   </section>
-
-  <!-- FAQ -->
-  <!-- <section id="faq" class="py-5 bg-white">
-    <div class="container py-5">
-      <h3 class="section-title text-center mb-5">Frequently Asked</h3>
-      <div class="mx-auto" style="max-width: 700px;">
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Are Ember2Essence candles natural?</span>
-            <i class="fas fa-plus"></i>
-          </div>
-          <div class="faq-answer">
-            Yes. We use 100% natural soy-coconut wax blends, pure essential oils, and lead-free cotton wicks.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>How long do they burn?</span>
-            <i class="fas fa-plus"></i>
-          </div>
-          <div class="faq-answer">
-            Signature (380g) burns for ~70 hours. Ultra (420g) burns for ~80 hours under optimal conditions.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Where are they hand-poured?</span>
-            <i class="fas fa-plus"></i>
-          </div>
-          <div class="faq-answer">
-            Every candle is hand-poured in small batches in Australia, with care and intention.
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Do you ship Australia-wide?</span>
-            <i class="fas fa-plus"></i>
-          </div>
-          <div class="faq-answer">
-            Yes. Express shipping to all metro areas. Regional delivery available.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- FOOTER -->
-  <footer class="py-4 border-top">
+    <!-- FOOTER -->
+<footer class="py-4 border-top">
     <div class="container text-center text-muted">
       <p class="mb-2">© 2025 Ember2Essence. Hand-poured in Australia.</p>
       <p>
@@ -609,73 +319,94 @@ More than just candles, Ember2Essence is a space created to remind you to pause,
       </a>
     </div>
   </footer>
+  <!-- // Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- privacy policy -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Ember2Essence Privacy policy</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Ember2Essence collects personal information such as your name and email address solely for the purpose of providing launch updates, early access offers, and relevant brand communications. Your information is stored securely and is never sold or shared with third parties. You may unsubscribe at any time via the links provided in our emails. By joining our waitlist, you consent to this use of your information.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+     <!-- privacy policy -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ember2Essence Privacy policy</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ember2Essence collects personal information such as your name and email address solely for the purpose of providing launch updates, early access offers, and relevant brand communications. Your information is stored securely and is never sold or shared with third parties. You may unsubscribe at any time via the links provided in our emails. By joining our waitlist, you consent to this use of your information.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  
+  <!-- candle care modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="candleGuideModal" tabindex="-1" aria-labelledby="candleGuideLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+  
+            <div class="modal-header border-0 pb-0">
+                <h4 class="modal-title fw-semibold" id="candleGuideLabel">
+                    🕯️ A Better Candle Experience
+                </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+  
+            <div class="modal-body">
+  
+                <p class="text-muted mb-4">
+                    A few simple steps will help your <strong>Ember2Essence</strong> candle
+                    burn cleaner, last longer, and deliver its full fragrance.
+                </p>
+  
+                <div class="mb-4">
+                    <h6 class="fw-semibold">✂️ Before Lighting</h6>
+                    <ul class="small ps-3 mb-0">
+                        <li>Trim the wick to <strong>5mm</strong>.</li>
+                        <li>Place on a heat-resistant surface.</li>
+                        <li>Keep away from drafts and flammable objects.</li>
+                    </ul>
+                </div>
+  
+                <div class="mb-4">
+                    <h6 class="fw-semibold">🔥 While Burning</h6>
+                    <ul class="small ps-3 mb-0">
+                        <li>Allow the first burn to reach the edges.</li>
+                        <li>Burn for up to <strong>2–3 hours</strong>.</li>
+                        <li>Never leave unattended.</li>
+                    </ul>
+                </div>
+  
+                <div class="mb-4">
+                    <h6 class="fw-semibold">♻️ After Use</h6>
+                    <ul class="small ps-3 mb-0">
+                        <li>Stop using when about 10mm of wax remains.</li>
+                        <li>Clean and reuse your candle jar.</li>
+                    </ul>
+                </div>
+  
+            </div>
+  
+            <div class="modal-footer border-0 justify-content-between">
+  
+                <a href="candle-guide.html" class="text-decoration-none">
+                    Read Complete Guide →
+                </a>
+  
+                <button class="btn btn-dark px-4" data-bs-dismiss="modal">
+                    Got it
+                </button>
+  
+            </div>
+  
+        </div>
+    </div>
+  </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
-  <script>
-    // GSAP Animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    document.querySelectorAll('[data-gsap]').forEach(el => {
-      const effect = el.getAttribute('data-gsap');
-      gsap.from(el, {
-        opacity: 0,
-        y: effect.includes('up') ? 50 : (effect.includes('left') ? -50 : 50),
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 85%",
-          toggleActions: "play none none reverse"
-        }
-      });
-    });
-
-    // FAQ Accordion
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        if (!isActive) item.classList.add('active');
-        item.querySelector('i').classList.toggle('fa-plus', !isActive);
-        item.querySelector('i').classList.toggle('fa-minus', isActive);
-      });
-    });
-
-    // Form submit (prevent default + optional)
-    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
-    // Optional JS alert
-    const name = this.querySelector('input[name="name"]').value;
-    const email = this.querySelector('input[name="email"]').value;
-    
-    if(!name || !email){
-        alert('Please fill out all fields.');
-        e.preventDefault(); // Stop form submission
-    } else {
-        alert('Thank you! We’ll be in touch soon.');
-        // Form will still submit to PHP backend
-    }
-});
-  </script>
-</body>
-</html>
+ 
+  </body>
+  </html>
