@@ -44,3 +44,19 @@
   });
 
   
+  // ---- Calm mode toggle (pauses hero glow animation) - used on new homepage hero ----
+  (function(){
+    var btn = document.getElementById('calmBtn');
+    var label = document.getElementById('calmLabel');
+    if(!btn) return;
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.body.classList.add('calm');
+      btn.setAttribute('aria-pressed','true');
+      label.textContent = 'Motion off';
+    }
+    btn.addEventListener('click', function(){
+      var on = document.body.classList.toggle('calm');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      label.textContent = on ? 'Motion off' : 'Calm mode';
+    });
+  })();
