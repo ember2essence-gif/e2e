@@ -1202,7 +1202,7 @@ body.calm .hero-glow .glow {
 /* push fixed navbar down below the marquee, and shift in-flow page content
    down to match (fixed elements ignore body margin, so this is safe) */
 .e2e-navbar {
-    top: 36px;
+    top: opx;
 }
 body {
     margin-top: 36px;
